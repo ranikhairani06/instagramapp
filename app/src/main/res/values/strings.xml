@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InstagramApp</string>
+    <string name="title">IG.LOCAL</string>
+    <string name="name">Nikmah Putri Khairani</string>
+    <string name="username">ranikhairani06</string>
+    <string name="posts">Posts</string>
+    <string name="bio">Mahasiswa TRPL 25 UGM</string>
+    <string name="button1">Edit Profile</string>
+    <string name="button2">Share Profile</string>
+    <string name="total_posts">100</string>
+    <string name="total_followers">100JT</string>
+    <string name="total_following">0</string>
+</resources>
