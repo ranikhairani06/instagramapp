@@ -42,6 +42,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.imgProfile.setOnClickListener {
+
+            val intent = Intent(
+                this@MainActivity,
+                PhotoActivity::class.java
+            )
+
+            intent.putExtra(
+                EXTRA_NAME,
+                binding.tvName.text.toString()
+            )
+
+            startActivity(intent)
+        }
+
         binding.btnEdit.setOnClickListener {
 
             val intent = Intent(
