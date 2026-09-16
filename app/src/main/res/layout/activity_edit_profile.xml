@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".EditProfile">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tvEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Edit Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Label Nama -->
+    <TextView
+        android:id="@+id/tvNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Nama"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+
+        app:layout_constraintTop_toBottomOf="@id/tvEditTitle"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="40dp" />
+
+    <!-- Input Nama -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Masukkan nama"
+        android:textSize="14sp"
+        android:inputType="textPersonName"
+
+        app:layout_constraintTop_toBottomOf="@id/tvNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="8dp" />
+
+    <!-- Label Bio -->
+    <TextView
+        android:id="@+id/tvBioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Bio"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+
+        app:layout_constraintTop_toBottomOf="@id/etName"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginTop="24dp" />
+
+    <!-- Input Bio -->
+    <EditText
+        android:id="@+id/etBio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="Masukkan bio"
+        android:textSize="14sp"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+
+        app:layout_constraintTop_toBottomOf="@id/tvBioLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="8dp" />
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="Simpan"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#673AB7"
+
+        app:layout_constraintTop_toBottomOf="@id/etBio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
